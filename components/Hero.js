@@ -4,7 +4,7 @@ import userData from "@constants/data";
 export default function Hero() {
   return (
     <div className="max-w-6xl my-5 mx-4 p-4 md:p-10 flex flex-col md:flex-row justify-left items-start overflow-hidden">
-      <div className="w-1/2 max-w-md">
+      <div className="w-3/4 md:w-1/2 max-w-md">
         <img src={userData.profileUrl} alt="profile photo" className="shadow" />
         <div className="flex flex-row justify-between mt-3">
           <div className="flex flex-row space-x-4 text-xs">
