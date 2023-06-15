@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+a.card {
+  color: #ecfccb;
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,4 +30,14 @@ span.anchor {
   display: block;
   position: relative;
   visibility: hidden;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
