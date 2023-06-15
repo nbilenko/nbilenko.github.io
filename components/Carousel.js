@@ -10,7 +10,7 @@ export function CarouselImage({ src, alt }) {
   );
 }
 
-export default function Carousel({ tiles }) {
+export function Carousel({ tiles }) {
   const [currentTile, setCurrentTile] = useState(0);
   const arrowStyle =
     "absolute text-slate-600 text-2xl z-10 bg-gray-300 h-10 w-10 rounded-full opacity-75 flex items-center justify-center";
