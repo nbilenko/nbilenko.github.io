@@ -8,26 +8,54 @@ export default function Hero() {
         <img src={userData.profileUrl} alt="profile photo" className="shadow" />
         <div className="flex flex-row justify-between mt-3">
           <div className="flex flex-row space-x-4 text-xs">
-            <p>Location: Sky Pesher by James Turrell. Photo credit: Scott French.</p>
+            <p>
+              Location: Sky Pesher by James Turrell. Photo credit: Scott French.
+            </p>
           </div>
         </div>
       </div>
       <div className="w-0.9 md:w-1/2 mt-3 md:mt-8 md:ml-10">
         <p className="text-l font-bold my-2">
-          My name is ny (natalia) bilenko. I like finding art in science, making invisible things visible, and digging in the cracks.
+          My name is ny (natalia) bilenko. I like finding art in science, making
+          invisible things visible, and digging in the cracks.
         </p>
         <p className="text-m my-2">
-          I am a software engineer with 14 years of programming experience and 7 years of software industry experience.
-          I have worked as a data visualization engineer, UI engineer, platform engineer, machine learning engineer, data scientist, and computational neuroscientist.
+          I am a software engineer with 10+ years of programming experience and
+          7 years of software industry experience. I have worked as a data
+          visualization engineer, UI engineer, platform engineer, machine
+          learning engineer, data scientist, and computational neuroscientist.
           I'm drawn to creative collaborations and learning by making things.
         </p>
         <p className="text-m my-2">
-          You can find some of my publications and talks{" "}
+          This site is home to some of my
           <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
-            <Link href="/pubstalks">here</Link>
-          </span>.
+            <Link href="/pubstalks"> publications and talks</Link>
+          </span>
+          ,{" "}
+          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
+            <Link href="/projects"> technology-related projects</Link>
+          </span>
+          , and{" "}
+          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
+            <Link href="/crafts"> craft projects</Link>
+          </span>
+          .
         </p>
-      </div >
-    </div >
+        <p className="text-m my-2">
+          Last year, I was profiled by USPTO in{" "}
+          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
+            <Link
+              href="https://www.uspto.gov/learning-and-resources/journeys-innovation/field-stories/artificial-intelligence-all
+"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              this article
+            </Link>
+          </span>
+          .
+        </p>
+      </div>
+    </div>
   );
 }
