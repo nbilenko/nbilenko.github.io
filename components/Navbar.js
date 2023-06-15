@@ -21,6 +21,7 @@ function NavLinks({ path }) {
     <>
       <NavLink name="Publications & Talks" href="/pubstalks" selected={path.startsWith("/pubstalks")} />
       <NavLink name="Projects" href="/projects" selected={path.startsWith("/projects")} />
+      <NavLink name="Crafts" href="/crafts" selected={path.startsWith("/crafts")} />
     </>
   )
 }
