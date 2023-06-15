@@ -117,13 +117,13 @@ const Badge = ({ text }) => {
     )
 }
 
-const TalkCard = ({ title, where, whereurl, year, url }) => {
+const TalkCard = ({ title, where, whereurl, year, url, urlText }) => {
     return (
         <li className="flex justify-between gap-x-6 py-5">
             <div className="gap-x-4">
                 {url && <a href={url} target="_blank" rel="noreferrer noopener">
                     <span className="inline-flex items-center mr-1 rounded-md bg-gray-30 dark:bg-gray-600 px-2 py-1 text-xs font-small text-gray-600 dark:text-gray-100 ring-1 ring-inset ring-gray-600/20 dark:ring-gray-100/20  hover:bg-gray-50 dark:hover:bg-gray-600 hover:text-sky-700 dark:hover:text-sky-400">
-                        slides
+                       {urlText ? urlText : "slides"}
                         <span className="mx-0.5"></span>
                         <svg fill="currentColor" height="16" width="16" version="1.1" xmlns="http://www.w3.org/1999/xlink"
                             viewBox="0 0 194.818 194.818" space="preserve">

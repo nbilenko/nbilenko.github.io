@@ -10,7 +10,7 @@ export function CarouselImage({ src, alt }) {
   );
 }
 
-export function Carousel({ tiles }) {
+export default function Carousel({ tiles }) {
   const [currentTile, setCurrentTile] = useState(0);
   const arrowStyle =
     "absolute text-slate-600 text-2xl z-10 bg-gray-300 h-10 w-10 rounded-full opacity-75 flex items-center justify-center";
@@ -59,7 +59,6 @@ export function Carousel({ tiles }) {
   );
 
   return (
-    // <div className="p-12 flex justify-center w-screen md:w-1/2 items-center">
     <div className="relative w-full items-center justify-center">
       <div className="carousel">
         {tiles.length > 1 && sliderControl(true)}
