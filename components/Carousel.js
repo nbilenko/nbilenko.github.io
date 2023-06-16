@@ -13,7 +13,7 @@ export function CarouselImage({ src, alt }) {
 export function Carousel({ tiles }) {
   const [currentTile, setCurrentTile] = useState(0);
   const arrowStyle =
-    "absolute text-slate-600 text-2xl z-10 bg-gray-300 h-10 w-10 rounded-full opacity-75 flex items-center justify-center";
+    "absolute text-slate-600 font-sans text-2xl z-10 bg-gray-300 h-8 w-8 rounded-md opacity-75 flex items-center justify-center";
 
   const refs = tiles.reduce((acc, val, i) => {
     acc[i] = createRef();

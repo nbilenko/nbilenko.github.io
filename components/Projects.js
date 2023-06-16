@@ -74,7 +74,7 @@ export default function Projects({ dataType = "projects" }) {
 
 function ProjectCard({ data }) {
   return (
-    <div className="w-full block col-span-3 md:col-span-1 shadow-2xl bg-slate-500">
+    <div className="w-full block col-span-3 md:col-span-1 shadow-2xl bg-slate-500 dark:bg-slate-600">
       <div className="relative m-2" id={data.name}>
         {data.tiles ? (
           <Carousel tiles={data.tiles} />
@@ -88,7 +88,7 @@ function ProjectCard({ data }) {
         </div>
         {data.url ? (
           <a href={data.url} target="_blank" rel="noopener noreferrer">
-            <h2 className="inline-flex items-center text-gray-50 font-bold text-xl bg-slate-500 rounded-md px-2 py-1 mx-2 hover:bg-slate-400">
+            <h2 className="inline-flex items-center text-gray-50 font-bold text-xl bg-slate-500 dark:bg-slate-600 rounded-md px-2 py-1 mx-2 hover:bg-slate-400">
               {data.name}
               <span className="mx-2">
                 <svg
@@ -116,7 +116,7 @@ function ProjectCard({ data }) {
             </h2>
           </a>
         ) : (
-          <h2 className="text-gray-50 font-bold text-xl bg-slate-500 rounded-md px-2 py-1 mx-2">
+          <h2 className="text-gray-50 font-bold text-xl bg-slate-500 dark:bg-slate-600 rounded-md px-2 py-1 mx-2">
             {data.name}
           </h2>
         )}
@@ -163,7 +163,7 @@ const parseFabric = (fabric, fabricUrl) => {
 
 const ProjectBadge = ({ text }) => {
   return (
-    <span className="inline-flex items-center mr-1 rounded-md px-2 py-1 text-xs font-small text-gray-50 bg-slate-500 ring-1 ring-inset ring-gray-100/50">
+    <span className="inline-flex items-center mr-1 rounded-md px-2 py-1 text-xs font-small text-gray-50 bg-slate-500 dark:bg-slate-600 ring-1 ring-inset ring-gray-100/50">
       {text}
     </span>
   );
