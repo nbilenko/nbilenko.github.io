@@ -5,7 +5,7 @@ export function CarouselImage({ src, alt }) {
     <img
       src={src}
       alt={alt}
-      className={`ml-auto mr-auto object-cover h-60 transform hover:scale-150 transition duration-1000 ease-out`}
+      className={`ml-auto mr-auto object-cover h-60 transform md:hover:scale-150 md:transition md:duration-1000 md:ease-out`}
     />
   );
 }
