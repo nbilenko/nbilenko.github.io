@@ -21,6 +21,7 @@ function NavLinks({ path }) {
     <>
       <NavLink name="Publications & Talks" href="/pubstalks" selected={path.startsWith("/pubstalks")} />
       <NavLink name="Projects" href="/projects" selected={path.startsWith("/projects")} />
+      <NavLink name="Crafts" href="/crafts" selected={path.startsWith("/crafts")} />
     </>
   )
 }
@@ -73,11 +74,10 @@ export default function Navbar() {
             {userData.name}
           </h1>
         </Link>
-
         <div className="space-x-8 hidden md:block">
           <NavLinks path={path} />
         </div>
-        <div className="mx-10">
+        <div className="ml-10 mr-4">
           <button
             aria-label="Toggle Dark Mode"
             type="button"

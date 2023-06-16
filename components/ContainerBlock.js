@@ -9,7 +9,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "ny bilenko",
-    image: "/profile.png",
+    image: "/profile.jpg",
     type: "website",
     ...customMeta,
   };
@@ -23,10 +23,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           property="og:url"
           content={`https://nbilenko.com${router.asPath}`}
         />
-        <link
-          rel="canonical"
-          href={`https://nbilenko.com${router.asPath}`}
-        />
+        <link rel="canonical" href={`https://nbilenko.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="NY Bilenko" />
         <meta property="og:description" content={meta.description} />
@@ -36,7 +33,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="bg-[#fbffff] dark:bg-[#3A6A75] text-gray-700 dark:text-gray-200">
+      <main className="bg-[#fbffff] dark:bg-[#1f4f5a] text-gray-700 dark:text-gray-200">
         <Navbar />
         <div>{children}</div>
         <Footer />
