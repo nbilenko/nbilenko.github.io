@@ -2,7 +2,7 @@ const userData = {
   githubUsername: "nbilenko",
   name: "ny bilenko",
   lastUpdated: 2023,
-  profileUrl: "/profile.png",
+  profileUrl: "/profile.jpg",
   email: "nbilenko+website@gmail.com",
   publications: [
     {
@@ -267,7 +267,7 @@ const userData = {
   projects: [
     {
       name: "Ariadne: observability for search",
-      url: "",
+      url: "https://multithreaded.stitchfix.com/blog/2023/06/13/ariadne-observability-ui-for-search/",
       description:
         "Ariadne is an internal observability system for search that I built at Stitch Fix, alongside the new capability for customer-facing search. My colleague Javad Hashemi and I wrote a blog post about it.",
       tiles: [
@@ -294,7 +294,7 @@ const userData = {
       tiles: [
         {
           name: "Dreaming up radical AI futures",
-          url: "/radicalai.png",
+          url: "/radicalai.jpg",
         },
       ],
       description:
@@ -358,7 +358,7 @@ const userData = {
       tiles: [
         {
           name: "Dr. Brainlove - desert",
-          url: "/drbrainlove.png",
+          url: "/drbrainlove2.jpg",
         },
         {
           name: "Dr. Brainlove - team",
@@ -403,7 +403,7 @@ const userData = {
     {
       name: "Berkeley Science Review: digital magazine",
       url: "https://www.berkeleysciencereview.com/",
-      tiles: [{ name: "Berkeley Science Review for iPad", url: "/bsr.png" }],
+      tiles: [{ name: "Berkeley Science Review for iPad", url: "/bsr.jpg" }],
       description:
         "The mobile app of the Berkeley Science Review magazine was based on the now defunct Adobe InDesign Digital Publishing Suite. I led development for the app, in collaboration with Asako Miyakawa and Helene Moorman.",
       tags: ["data visualization", "science education", "publishing"],
@@ -422,7 +422,7 @@ const userData = {
       tags: ["sewing"],
       tiles: [
         {
-          url: "https://drive.google.com/uc?export=view&id=1ZtiYHe1qfExFtCQEiulnij8Oq7FUiS8L",
+          url: "/crafts/shirtno1.jpg",
           name: "shirt no. 1, front",
         },
       ],
@@ -435,11 +435,11 @@ const userData = {
       tags: ["sewing"],
       tiles: [
         {
-          url: "https://drive.google.com/uc?export=view&id=1D6oFwfl4BkfzujVCftz6rM7W2YMn1nzB",
+          url: "/crafts/gillian1.jpg",
           name: "Gillian wrap dress (standing)",
         },
         {
-          url: "https://drive.google.com/uc?export=view&id=1vOlav6KgjQoHenLQRXwFmOHKT0BZE7JH",
+          url: "/crafts/gillian2.jpg",
           name: "Gillian wrap dress (seated)",
         },
       ],
@@ -454,15 +454,15 @@ const userData = {
       ],
       tiles: [
         {
-          url: "https://drive.google.com/uc?export=view&id=1oeL7STMV9fR1V7h06yN79MmwHQALq8-J",
+          url: "/crafts/bibs1.jpg",
           name: "Burnside bibs, view 1",
         },
         {
-          url: "https://drive.google.com/uc?export=view&id=1VyyfLRHDa4lyvH9SQwGbjoxIKxlGg41H",
+          url: "/crafts/bibs2.jpg",
           name: "Burnside bibs, view 2",
         },
         {
-          url: "https://drive.google.com/uc?export=view&id=11xEgakav9XIwBBG3yKAiTSI2U-ky0_VA",
+          url: "/crafts/bibs3.jpg",
           name: "Burnside bibs, view 3",
         },
       ],
@@ -492,11 +492,11 @@ const userData = {
       tiles: [
         {
           name: "Elodie wrap dress (seated)",
-          url: "https://drive.google.com/uc?export=view&id=1ICP89fbKoLLTDk5Lw6y_TxS2BO4Hy8or",
+          url: "/crafts/elodie1.jpg",
         },
         {
           name: "Elodie wrap dress (standing)",
-          url: "https://drive.google.com/uc?export=view&id=1cX1MEPSXvigLRS6zal-2JNs-3IU-U5LV",
+          url: "/crafts/elodie2.jpg",
         },
       ],
       tags: ["sewing"],
@@ -509,7 +509,7 @@ const userData = {
       tiles: [
         {
           name: "Rio t-shirt",
-          url: "https://drive.google.com/uc?export=view&id=1q9_Knu-p7GnEO5oN6wyIUA7RL0swbMfq",
+          url: "/crafts/rio.jpg",
         },
       ],
       tags: ["sewing"],
@@ -524,7 +524,7 @@ const userData = {
       tiles: [
         {
           name: "Pajama pants",
-          url: "https://drive.google.com/uc?export=view&id=1AfiXu4JqBDrJlQ7vGmQCtuBiT9uHJ8Ls",
+          url: "/crafts/pajamas.jpg",
         },
       ],
       tags: ["sewing", "recycling"],
@@ -551,19 +551,19 @@ const userData = {
       tiles: [
         {
           name: "Ilford jacket",
-          url: "https://drive.google.com/uc?export=view&id=1DoQ-_1anZXOyDzkdoNYSL05eEAmQe3Ne",
+          url: "/crafts/ilford1.jpg",
         },
         {
           name: "Ilford jacket (lining view)",
-          url: "https://drive.google.com/uc?export=view&id=1i12hYKmwB2QwyafR-G953wrwvanQCrH4",
+          url: "/crafts/ilford2.jpg",
         },
         {
           name: "Ilford jacket (button detail)",
-          url: "https://drive.google.com/uc?export=view&id=1RMZi_7Q54yRfVVJquXIH-faLKZYMdT8c",
+          url: "/crafts/ilford3.jpg",
         },
         {
           name: "Ilford jacket (pockets turned out)",
-          url: "https://drive.google.com/uc?export=view&id=1pWT9QIUpjbl-KDtgNh4o98PoZsndG25T",
+          url: "/crafts/ilford4.jpg",
         },
       ],
       tags: ["sewing", "recycling"],
@@ -573,7 +573,7 @@ const userData = {
       tiles: [
         {
           name: "Moth hole embroidery darning",
-          url: "https://drive.google.com/uc?export=view&id=1jO2E-cVZYyl_cPDTKFr2pm3y7fcoU-6p",
+          url: "/crafts/moth.jpg",
         },
       ],
       description: (
@@ -596,11 +596,11 @@ const userData = {
       tiles: [
         {
           name: "Kalle shirt with stand collar (front)",
-          url: "https://drive.google.com/uc?export=view&id=1R-llRsd1McvuWKlBLY7OBS1mYcK58owd",
+          url: "/crafts/kalle1.jpg",
         },
         {
           name: "Kalle shirt with stand collar (back)",
-          url: "https://drive.google.com/uc?export=view&id=1vuu3EiuZ3Dedgko-EZvRvZf92a5ja_jM",
+          url: "/crafts/kalle2.jpg",
         },
       ],
       tags: ["sewing", "recycling"],
@@ -632,19 +632,19 @@ const userData = {
       tiles: [
         {
           name: "Ilford jacket",
-          url: "https://drive.google.com/uc?export=view&id=199zQhBPIkXlA8zbIHWdjhkefaZUXT5xA",
+          url: "/crafts/ilfordcoat1.jpg",
         },
         {
           name: "Ilford jacket (back)",
-          url: "https://drive.google.com/uc?export=view&id=1TAm_kO9_mSv66B-Qgv4k_sagsA8JWlxt",
+          url: "/crafts/ilfordcoat2.jpg",
         },
         {
           name: "Ilford jacket (inside detail)",
-          url: "https://drive.google.com/uc?export=view&id=1lf893lWOwSeA4S7udRy-8LdlC8Kgg7Sf",
+          url: "/crafts/ilfordcoat3.jpg",
         },
         {
           name: "Ilford jacket (sleeve placket detail)",
-          url: "https://drive.google.com/uc?export=view&id=1qRVdsioAdfjIP-itfimIwgcw91GCi0E4",
+          url: "/crafts/ilfordcoat4.jpg",
         },
       ],
       tags: ["sewing", "recycling"],
@@ -658,11 +658,11 @@ const userData = {
       tiles: [
         {
           name: "Kalle shirt with full collar (front)",
-          url: "https://drive.google.com/uc?export=view&id=1STAqnQN_Umbh-4Cn04SW2AqoBF-JkNiH",
+          url: "/crafts/kalle_mushroom1.jpg",
         },
         {
           name: "Kalle shirt with full collar (back)",
-          url: "https://drive.google.com/uc?export=view&id=1a1_mm1tNUfyrOQeiCkKJGJ_GHwnK8MaN",
+          url: "/crafts/kalle_mushroom2.jpg",
         },
       ],
       tags: ["sewing"],
@@ -674,20 +674,34 @@ const userData = {
       tiles: [
         {
           name: "Yarn scrap tote (hanging)",
-          url: "https://drive.google.com/uc?export=view&id=1yYkdiQBMGcQhkODsGJ2RbsP-XGElV1Vt",
+          url: "/crafts/yarntote1.jpg",
         },
         {
           name: "Yarn scrap tote (side 1)",
-          url: "https://drive.google.com/uc?export=view&id=1icQQdl1rMX54ILzdxmH_R6dNrDMb1IHN",
+          url: "/crafts/yarntote2.jpg",
         },
         {
           name: "Yarn scrap tote (side 2)",
-          url: "https://drive.google.com/uc?export=view&id=1ml3JCsoMC9UK44jXL8iM6lH_siWo--SZ",
+          url: "/crafts/yarntote3.jpg",
         },
       ],
       description:
-        "I made this tote out of old scrap yarn to experiment with a few granny square designs for another project.",
+        "Self-drafted tote out of old scrap yarn to experiment with a few granny square designs for another project.",
       tags: ["crochet", "recycling", "prototype"],
+    },
+    {
+      name: "Hindsight Afghan block",
+      pattern: "Hindsight by Polly Plum",
+      patternUrl: "https://everytrickonthehook.com/patterns-2/hindsight/",
+      tiles: [
+        {
+          name: "Hindsight Afghan block",
+          url: "/crafts/hindsight.jpg",
+        },
+      ],
+      description:
+        "Hindsight panel, Malabrigo Rios Whales Road yarn, to be part of another project.",
+      tags: ["crochet"],
     },
   ],
   socialLinks: {
