@@ -1,20 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
-
-const PUB_COLOR = {
-  article: "blue",
-  thesis: "red",
-  proceedings: "cyan",
-  patent: "green",
-  report: "yellow",
-};
-
-const TALK_COLOR = {
-  lecture: "blue",
-  workshop: "red",
-  panel: "green",
-};
+import { PUB_COLORS, TALK_COLORS } from "@constants/utils";
 
 function TabLink({ name, href, active }) {
   return (
@@ -98,7 +85,7 @@ const PublicationCard = ({
   topics,
   type,
 }) => {
-  const pubColor = PUB_COLOR[type];
+  const pubColor = PUB_COLORS[type];
   return (
     <li className="flex justify-between gap-x-6 py-5">
       <div className="gap-x-4">
@@ -170,7 +157,7 @@ const Badge = ({ text }) => {
 };
 
 const TalkCard = ({ title, where, whereurl, year, url, urlText, type }) => {
-  const talkColor = TALK_COLOR[type];
+  const talkColor = TALK_COLORS[type];
   return (
     <li className="flex justify-between gap-x-6 py-5">
       <div className="gap-x-4">
