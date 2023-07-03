@@ -194,11 +194,12 @@ const userData = {
   ],
   talks: [
     {
-      title: "Panel - Ethics in AI (panelist)",
+      title: "Ethics in AI (panelist)",
       where: "Women in Data Science Silicon Valley @ SAP",
       whereurl: "https://events.sap.com/us/wids-2020-sv/en/online-agenda",
       year: 2020,
       url: "",
+      type: "panel",
     },
     {
       title: "Computer Vision and Its Applications (guest lecturer)",
@@ -207,6 +208,7 @@ const userData = {
         "https://dschool.stanford.edu/classes/designing-machine-learning",
       year: 2020,
       url: "https://drive.google.com/file/d/1mMgi1h_fXB9xr15GIG_bQIMUGxdOuQtq/view?usp=sharing",
+      type: "lecture",
     },
     {
       title:
@@ -217,14 +219,16 @@ const userData = {
       year: 2020,
       url: "https://drive.google.com/file/d/1v8eW_ZfimZNjDac249iH3h-bLNcFOZCH/view?usp=sharing",
       urlText: "zine",
+      type: "workshop",
     },
     {
       title:
-        "Panel - Algorithmic Inequity: Impacts on the Queer Community and Beyond (moderator)",
+        "Algorithmic Inequity: Impacts on the Queer Community and Beyond (moderator)",
       where: "NeurIPS 2019 Queer in AI workshop",
       whereurl: "https://sites.google.com/view/queer-in-ai/neurips-2019",
       year: 2019,
       url: "",
+      type: "panel",
     },
     {
       title: "Ethical and Societal Implications of AI (lecturer/mentor)",
@@ -232,6 +236,7 @@ const userData = {
       whereurl: "https://ai-4-all.org/",
       year: 2019,
       url: "https://drive.google.com/file/d/1U_Tf2Luh-GQqPaRty90B-aiB5uiq_Q8F/view?usp=sharing",
+      type: "lecture",
     },
     {
       title:
@@ -240,6 +245,7 @@ const userData = {
       whereurl: "https://shift.stanford.edu/healthai/2017/",
       year: 2017,
       url: "https://drive.google.com/file/d/1Ypvclu1O7MwvlDogUntPVRT9lVEBJqKY/view?usp=sharing",
+      type: "lecture",
     },
     // {
     //   title: "Improving Detection and Diagnosis of Heart Disease with Deep Learning",
@@ -250,11 +256,12 @@ const userData = {
     // },
     {
       title:
-        "Modeling of Natural Stimulus Representation in the Human Brain using Canonical Correlation Analysis (PhD seminar)",
+        "Modeling of Natural Stimulus Representation in the Human Brain using Canonical Correlation Analysis (PhD thesis seminar)",
       where: "HW Neuroscience Institute, UC Berkeley",
       whereurl: "https://neuroscience.berkeley.edu/",
       year: 2016,
       url: "https://drive.google.com/file/d/1CGsO_GbQxcXF18L5ywRlyXrm4IWzPvjB/view?usp=sharing",
+      type: "lecture",
     },
 
     {
@@ -262,6 +269,7 @@ const userData = {
       where: "SXSW Interactive 2015 panel",
       whereurl: "https://schedule.sxsw.com/2015/events/event_IAP38468",
       year: 2015,
+      type: "panel",
     },
   ],
   projects: [
@@ -411,123 +419,139 @@ const userData = {
   ],
   crafts: [
     {
-      name: "Shirt no. 1",
-      pattern: "100 acts of sewing: Shirt no.1",
+      name: "Hindsight Afghan block",
+      pattern: "Hindsight by Polly Plum",
+      patternUrl: "https://everytrickonthehook.com/patterns-2/hindsight/",
+      tiles: [
+        {
+          name: "Hindsight Afghan block",
+          url: "/crafts/hindsight.jpg",
+        },
+      ],
+      description:
+        "Hindsight panel, Malabrigo Rios Whales Road yarn, to be part of another project.",
+      tags: ["crochet"],
+    },
+    {
+      name: "Yarn scrap tote",
+      pattern: "A few of the 365 days of granny squares",
+      patternUrl: "https://yarnutopia.com/365-days-of-granny-squares/",
+      tiles: [
+        {
+          name: "Yarn scrap tote (hanging)",
+          url: "/crafts/yarntote1.jpg",
+        },
+        {
+          name: "Yarn scrap tote (side 1)",
+          url: "/crafts/yarntote2.jpg",
+        },
+        {
+          name: "Yarn scrap tote (side 2)",
+          url: "/crafts/yarntote3.jpg",
+        },
+      ],
+      description:
+        "Self-drafted tote out of old scrap yarn to experiment with a few granny square designs for another project.",
+      tags: ["crochet", "recycling", "prototype"],
+    },
+    {
+      name: "Kalle shirt (full collar)",
+      pattern: "Kalle shirt by Closet core patterns",
       patternUrl:
-        "https://shop.100actsofsewing.com/collections/frontpage/products/100-acts-of-sewing-shirt-no-1-pdf-sewing-pattern",
-      fabric: ["Hokkoh Poppies linen"],
-      fabricUrl: [
-        "https://stonemountainfabric.com/product/hokkoh-linen-poppies-orange/",
-      ],
-      tags: ["sewing"],
+        "https://closetcorepatterns.com/products/kalle-shirt-shirtdress-pattern",
+      fabric: ["Dear Stella Starstuff Mushrooms cotton remnant"],
       tiles: [
         {
-          url: "/crafts/shirtno1.jpg",
-          name: "shirt no. 1, front",
+          name: "Kalle shirt with full collar (front)",
+          url: "/crafts/kalle_mushroom1.jpg",
+        },
+        {
+          name: "Kalle shirt with full collar (back)",
+          url: "/crafts/kalle_mushroom2.jpg",
         },
       ],
+      tags: ["sewing"],
     },
     {
-      name: "Gillian wrap dress",
-      pattern: "Gillian wrap dress by Muse patterns",
-      patternUrl: "https://sewingmuse.com/products/gillian-wrap-dress",
-      fabric: ["Digital print rayon knit", "black stretch poplin"],
-      tags: ["sewing"],
-      tiles: [
-        {
-          url: "/crafts/gillian1.jpg",
-          name: "Gillian wrap dress (standing)",
-        },
-        {
-          url: "/crafts/gillian2.jpg",
-          name: "Gillian wrap dress (seated)",
-        },
+      name: "Ilford jacket (short)",
+      pattern: "Ilford jacket by the Friday Pattern Company",
+      patternUrl:
+        "https://fridaypatterncompany.com/products/the-ilford-jacket-pdf-pattern",
+      fabric: [
+        "Repurposed canvas from IKEA EKTORP sofa cover in Svanby green",
+        "Thrifted heavyweight charcoal denim",
       ],
-    },
-    {
-      name: "Burnside bibs",
-      pattern: "Burnside bibs by Sew House 7",
-      patternUrl: "https://sewhouse7.com/products/burnside-bibs",
-      fabric: ["Yarn dyed cotton in rainbow stripe"],
       fabricUrl: [
-        "https://stonemountainfabric.com/product/yarn-dyed-cotton-rainbow-stripe-pink-green-yellow/",
+        "https://www.ikea.com/us/en/cat/ektorp-series-07488/",
+        "https://www.berkeleycraftsstore.com/",
       ],
+      description: "Notions: Moon buttons from Etsy",
       tiles: [
         {
-          url: "/crafts/bibs1.jpg",
-          name: "Burnside bibs, view 1",
+          name: "Ilford jacket",
+          url: "/crafts/ilfordcoat1.jpg",
         },
         {
-          url: "/crafts/bibs2.jpg",
-          name: "Burnside bibs, view 2",
+          name: "Ilford jacket (back)",
+          url: "/crafts/ilfordcoat2.jpg",
         },
         {
-          url: "/crafts/bibs3.jpg",
-          name: "Burnside bibs, view 3",
+          name: "Ilford jacket (inside detail)",
+          url: "/crafts/ilfordcoat3.jpg",
+        },
+        {
+          name: "Ilford jacket (sleeve placket detail)",
+          url: "/crafts/ilfordcoat4.jpg",
         },
       ],
-      tags: ["sewing"],
+      tags: ["sewing", "recycling"],
     },
     // {
-    //   name: "Blanca flight suit",
-    //   pattern: "Blanca flight suit by Closet Core patterns",
+    //   name: "Charlie caftan",
+    //   pattern: "Charlie caftan by Closet Core patterns",
     //   patternUrl:
-    //     "https://closetcorepatterns.com/products/blanca-flight-suit-pattern?variant=39419135950982",
-    //   fabric: ["Yarn dyed two-tone linen", "Hokkoh Poppies linen"],
-    //   fabricUrl: [
-    //     "https://stonemountainfabric.com/?s=Yarn+Dyed+Two-Tone+Linen",
-    //     "https://stonemountainfabric.com/product/hokkoh-linen-poppies-orange/",
+    //     "https://closetcorepatterns.com/products/charlie-caftan-pattern",
+    //   fabric: [
+    //     "Cat faces Ecovero Challis in black/white and wisteria/merlot (discontinued)",
     //   ],
     //   tags: ["sewing"],
     // },
     {
-      name: "Elodie wrap dress",
-      pattern: "Elodie wrap dress by Closet Core patterns",
+      name: "Kalle shirt (stand collar)",
+      pattern: "Kalle shirt by Closet core patterns",
       patternUrl:
-        "https://closetcorepatterns.com/products/elodie-wrap-dress-pattern",
-      fabric: ["Hokkoh Poppies linen"],
-      fabricUrl: [
-        "https://stonemountainfabric.com/product/hokkoh-linen-fresh-poppies-charcoalyellow/",
-      ],
+        "https://closetcorepatterns.com/products/kalle-shirt-shirtdress-pattern",
+      fabric: ["Scrap Cotton + Steel quilting cotton in Imagined Landscapes"],
+      description: "Notions: Orange buttons from Etsy",
       tiles: [
         {
-          name: "Elodie wrap dress (seated)",
-          url: "/crafts/elodie1.jpg",
+          name: "Kalle shirt with stand collar (front)",
+          url: "/crafts/kalle1.jpg",
         },
         {
-          name: "Elodie wrap dress (standing)",
-          url: "/crafts/elodie2.jpg",
-        },
-      ],
-      tags: ["sewing"],
-    },
-    {
-      name: "Rio t-shirt",
-      pattern: "Rio t-shirt by True Bias",
-      patternUrl: "https://truebias.com/products/rio-ringer-t-shirt-dress",
-      fabric: ["Bamboo rayon in tie dye", "bamboo rib knit"],
-      tiles: [
-        {
-          name: "Rio t-shirt",
-          url: "/crafts/rio.jpg",
-        },
-      ],
-      tags: ["sewing"],
-    },
-    {
-      name: "Pajama pants",
-      pattern: "Self-drafted pajama pants with piped turn-ups",
-      fabric: [
-        "Repurposed cotton shower curtain from Target",
-        "repurposed linen curtains from IKEA",
-      ],
-      tiles: [
-        {
-          name: "Pajama pants",
-          url: "/crafts/pajamas.jpg",
+          name: "Kalle shirt with stand collar (back)",
+          url: "/crafts/kalle2.jpg",
         },
       ],
       tags: ["sewing", "recycling"],
+    },
+    {
+      name: "Moth embroidery darning",
+      tiles: [
+        {
+          name: "Moth embroidery darning",
+          url: "/crafts/moth.jpg",
+        },
+      ],
+      description: (
+        <>
+          <p>
+            Death's head hawkmoth embroidery to guard against new moth attacks.
+          </p>
+          <p>Materials: embroidery floss thread, recycled denim backing.</p>
+        </>
+      ),
+      tags: ["embroidery", "recycling"],
     },
     {
       name: "Ilford jacket (long)",
@@ -569,139 +593,123 @@ const userData = {
       tags: ["sewing", "recycling"],
     },
     {
-      name: "Moth hole embroidery darning",
+      name: "Rio t-shirt",
+      pattern: "Rio t-shirt by True Bias",
+      patternUrl: "https://truebias.com/products/rio-ringer-t-shirt-dress",
+      fabric: ["Bamboo rayon in tie dye", "bamboo rib knit"],
       tiles: [
         {
-          name: "Moth hole embroidery darning",
-          url: "/crafts/moth.jpg",
-        },
-      ],
-      description: (
-        <>
-          <p>
-            Death's head hawkmoth embroidery to guard against new moth attacks.
-          </p>
-          <p>Materials: embroidery floss thread, recycled denim backing.</p>
-        </>
-      ),
-      tags: ["embroidery", "recycling"],
-    },
-    {
-      name: "Kalle shirt (stand collar)",
-      pattern: "Kalle shirt by Closet core patterns",
-      patternUrl:
-        "https://closetcorepatterns.com/products/kalle-shirt-shirtdress-pattern",
-      fabric: ["Scrap Cotton + Steel quilting cotton in Imagined Landscapes"],
-      description: "Notions: Orange buttons from Etsy",
-      tiles: [
-        {
-          name: "Kalle shirt with stand collar (front)",
-          url: "/crafts/kalle1.jpg",
-        },
-        {
-          name: "Kalle shirt with stand collar (back)",
-          url: "/crafts/kalle2.jpg",
-        },
-      ],
-      tags: ["sewing", "recycling"],
-    },
-    // {
-    //   name: "Charlie caftan",
-    //   pattern: "Charlie caftan by Closet Core patterns",
-    //   patternUrl:
-    //     "https://closetcorepatterns.com/products/charlie-caftan-pattern",
-    //   fabric: [
-    //     "Cat faces Ecovero Challis in black/white and wisteria/merlot (discontinued)",
-    //   ],
-    //   tags: ["sewing"],
-    // },
-    {
-      name: "Ilford jacket (short)",
-      pattern: "Ilford jacket by the Friday Pattern Company",
-      patternUrl:
-        "https://fridaypatterncompany.com/products/the-ilford-jacket-pdf-pattern",
-      fabric: [
-        "Repurposed canvas from IKEA EKTORP sofa cover in Svanby green",
-        "Thrifted heavyweight charcoal denim",
-      ],
-      fabricUrl: [
-        "https://www.ikea.com/us/en/cat/ektorp-series-07488/",
-        "https://www.berkeleycraftsstore.com/",
-      ],
-      description: "Notions: Moon buttons from Etsy",
-      tiles: [
-        {
-          name: "Ilford jacket",
-          url: "/crafts/ilfordcoat1.jpg",
-        },
-        {
-          name: "Ilford jacket (back)",
-          url: "/crafts/ilfordcoat2.jpg",
-        },
-        {
-          name: "Ilford jacket (inside detail)",
-          url: "/crafts/ilfordcoat3.jpg",
-        },
-        {
-          name: "Ilford jacket (sleeve placket detail)",
-          url: "/crafts/ilfordcoat4.jpg",
-        },
-      ],
-      tags: ["sewing", "recycling"],
-    },
-    {
-      name: "Kalle shirt (full collar)",
-      pattern: "Kalle shirt by Closet core patterns",
-      patternUrl:
-        "https://closetcorepatterns.com/products/kalle-shirt-shirtdress-pattern",
-      fabric: ["Dear Stella Starstuff Mushrooms cotton remnant"],
-      tiles: [
-        {
-          name: "Kalle shirt with full collar (front)",
-          url: "/crafts/kalle_mushroom1.jpg",
-        },
-        {
-          name: "Kalle shirt with full collar (back)",
-          url: "/crafts/kalle_mushroom2.jpg",
+          name: "Rio t-shirt",
+          url: "/crafts/rio.jpg",
         },
       ],
       tags: ["sewing"],
     },
     {
-      name: "Yarn scrap tote",
-      pattern: "A few of the 365 days of granny squares",
-      patternUrl: "https://yarnutopia.com/365-days-of-granny-squares/",
+      name: "Pajama pants",
+      pattern: "Self-drafted pajama pants with piped turn-ups",
+      fabric: [
+        "Repurposed cotton shower curtain from Target",
+        "repurposed linen curtains from IKEA",
+      ],
       tiles: [
         {
-          name: "Yarn scrap tote (hanging)",
-          url: "/crafts/yarntote1.jpg",
-        },
-        {
-          name: "Yarn scrap tote (side 1)",
-          url: "/crafts/yarntote2.jpg",
-        },
-        {
-          name: "Yarn scrap tote (side 2)",
-          url: "/crafts/yarntote3.jpg",
+          name: "Pajama pants",
+          url: "/crafts/pajamas.jpg",
         },
       ],
-      description:
-        "Self-drafted tote out of old scrap yarn to experiment with a few granny square designs for another project.",
-      tags: ["crochet", "recycling", "prototype"],
+      tags: ["sewing", "recycling"],
     },
     {
-      name: "Hindsight Afghan block",
-      pattern: "Hindsight by Polly Plum",
-      patternUrl: "https://everytrickonthehook.com/patterns-2/hindsight/",
+      name: "Elodie wrap dress",
+      pattern: "Elodie wrap dress by Closet Core patterns",
+      patternUrl:
+        "https://closetcorepatterns.com/products/elodie-wrap-dress-pattern",
+      fabric: ["Hokkoh Poppies linen"],
+      fabricUrl: [
+        "https://stonemountainfabric.com/product/hokkoh-linen-fresh-poppies-charcoalyellow/",
+      ],
       tiles: [
         {
-          name: "Hindsight Afghan block",
-          url: "/crafts/hindsight.jpg",
+          name: "Elodie wrap dress (seated)",
+          url: "/crafts/elodie1.jpg",
+        },
+        {
+          name: "Elodie wrap dress (standing)",
+          url: "/crafts/elodie2.jpg",
         },
       ],
-      description:
-        "Hindsight panel, Malabrigo Rios Whales Road yarn, to be part of another project.",
-      tags: ["crochet"],
+      tags: ["sewing"],
+    },
+    // {
+    //   name: "Blanca flight suit",
+    //   pattern: "Blanca flight suit by Closet Core patterns",
+    //   patternUrl:
+    //     "https://closetcorepatterns.com/products/blanca-flight-suit-pattern?variant=39419135950982",
+    //   fabric: ["Yarn dyed two-tone linen", "Hokkoh Poppies linen"],
+    //   fabricUrl: [
+    //     "https://stonemountainfabric.com/?s=Yarn+Dyed+Two-Tone+Linen",
+    //     "https://stonemountainfabric.com/product/hokkoh-linen-poppies-orange/",
+    //   ],
+    //   tags: ["sewing"],
+    // },
+    {
+      name: "Burnside bibs",
+      pattern: "Burnside bibs by Sew House 7",
+      patternUrl: "https://sewhouse7.com/products/burnside-bibs",
+      fabric: ["Yarn dyed cotton in rainbow stripe"],
+      fabricUrl: [
+        "https://stonemountainfabric.com/product/yarn-dyed-cotton-rainbow-stripe-pink-green-yellow/",
+      ],
+      tiles: [
+        {
+          url: "/crafts/bibs1.jpg",
+          name: "Burnside bibs, view 1",
+        },
+        {
+          url: "/crafts/bibs2.jpg",
+          name: "Burnside bibs, view 2",
+        },
+        {
+          url: "/crafts/bibs3.jpg",
+          name: "Burnside bibs, view 3",
+        },
+      ],
+      tags: ["sewing"],
+    },
+    {
+      name: "Gillian wrap dress",
+      pattern: "Gillian wrap dress by Muse patterns",
+      patternUrl: "https://sewingmuse.com/products/gillian-wrap-dress",
+      fabric: ["Digital print rayon knit", "black stretch poplin"],
+      tags: ["sewing"],
+      tiles: [
+        {
+          url: "/crafts/gillian1.jpg",
+          name: "Gillian wrap dress (standing)",
+        },
+        {
+          url: "/crafts/gillian2.jpg",
+          name: "Gillian wrap dress (seated)",
+        },
+      ],
+    },
+    {
+      name: "Shirt no. 1",
+      pattern: "100 acts of sewing: Shirt no.1",
+      patternUrl:
+        "https://shop.100actsofsewing.com/collections/frontpage/products/100-acts-of-sewing-shirt-no-1-pdf-sewing-pattern",
+      fabric: ["Hokkoh Poppies linen"],
+      fabricUrl: [
+        "https://stonemountainfabric.com/product/hokkoh-linen-poppies-orange/",
+      ],
+      tags: ["sewing"],
+      tiles: [
+        {
+          url: "/crafts/shirtno1.jpg",
+          name: "shirt no. 1, front",
+        },
+      ],
     },
   ],
   socialLinks: {
