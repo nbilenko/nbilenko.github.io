@@ -1,14 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
-
-const PUB_COLOR = {
-  article: "blue",
-  thesis: "red",
-  proceedings: "cyan",
-  patent: "green",
-  report: "yellow",
-};
+import { PUB_COLORS, TALK_COLORS } from "@constants/utils";
 
 function TabLink({ name, href, active }) {
   return (
@@ -92,7 +85,7 @@ const PublicationCard = ({
   topics,
   type,
 }) => {
-  const pubColor = PUB_COLOR[type];
+  const pubColor = PUB_COLORS[type];
   return (
     <li className="flex justify-between gap-x-6 py-5">
       <div className="gap-x-4">
@@ -163,13 +156,21 @@ const Badge = ({ text }) => {
   );
 };
 
-const TalkCard = ({ title, where, whereurl, year, url, urlText }) => {
+const TalkCard = ({ title, where, whereurl, year, url, urlText, type }) => {
+  const talkColor = TALK_COLORS[type];
   return (
     <li className="flex justify-between gap-x-6 py-5">
       <div className="gap-x-4">
+        {talkColor && (
+          <span
+            className={`inline-flex items-center gap-1.5 py-1 px-2 rounded-md text-xs font-small bg-${talkColor}-100 text-${talkColor}-800`}
+          >
+            {type}
+          </span>
+        )}
         {url && (
           <a href={url} target="_blank" rel="noreferrer noopener">
-            <span className="inline-flex items-center mr-1 rounded-md bg-gray-30 dark:bg-gray-600 px-2 py-1 text-xs font-small text-gray-600 dark:text-gray-100 ring-1 ring-inset ring-gray-600/20 dark:ring-gray-100/20  hover:bg-gray-50 dark:hover:bg-gray-600 hover:text-sky-700 dark:hover:text-sky-400">
+            <span className="inline-flex items-center mx-1 rounded-md bg-gray-30 dark:bg-gray-600 px-2 py-1 text-xs font-small text-gray-600 dark:text-gray-100 ring-1 ring-inset ring-gray-600/20 dark:ring-gray-100/20  hover:bg-gray-50 dark:hover:bg-gray-600 hover:text-sky-700 dark:hover:text-sky-400">
               {urlText ? urlText : "slides"}
               <span className="mx-0.5"></span>
               <svg
