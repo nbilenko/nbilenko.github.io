@@ -750,7 +750,7 @@ export const dearData = {
       natalia: {
         frontImage: "/deardata/week2_natalia_front.jpg",
         backImage: "/deardata/week2_natalia_back.jpg",
-        text: `microagressions =( >( =O -_-. Recorded instances of microaggressions, either involving me or for which I was present`,
+        text: `microaggressions =( >( =O -_-. Recorded instances of microaggressions, either involving me or for which I was present`,
       },
     },
     {
@@ -850,7 +850,7 @@ export const dearData = {
       ching: {
         frontImage: "/deardata/week9_ching_front.jpg",
         backImage: "/deardata/week9_ching_back.jpg",
-        text: "I recorded activities throughout the day for 7 days, and wehther I felt energized, deprived, or neutral from the activity. In using watercolor, my intention was to depict the way energy flows and ebbs into the next moment, affecting mood. This time, I learned a lot during the data tracking itself, as opposed to seeing the data visualized after.",
+        text: "I recorded activities throughout the day for 7 days, and whether I felt energized, deprived, or neutral from the activity. In using watercolor, my intention was to depict the way energy flows and ebbs into the next moment, affecting mood. This time, I learned a lot during the data tracking itself, as opposed to seeing the data visualized after.",
       },
       natalia: {
         frontImage: "/deardata/week9_natalia_front.jpg",
@@ -870,7 +870,7 @@ export const dearData = {
       natalia: {
         frontImage: "/deardata/week10_natalia_front.jpg",
         backImage: "/deardata/week10_natalia_back.jpg",
-        text: "This week, I recorded my movements between locatins (and in one case, within a location). This was shortly before quarantine, and looking back on my life then, only a few weeks ago, is surreal. Maybe that's why I gravitated towards a fanciful kite/plant theme - I hope we grow towards better times through this untethered journey.",
+        text: "This week, I recorded my movements between locations (and in one case, within a location). This was shortly before quarantine, and looking back on my life then, only a few weeks ago, is surreal. Maybe that's why I gravitated towards a fanciful kite/plant theme - I hope we grow towards better times through this untethered journey.",
       },
     },
   ],
