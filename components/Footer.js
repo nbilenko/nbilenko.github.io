@@ -1,4 +1,4 @@
-import userData from "@constants/data";
+import { userData } from "@constants/data";
 import Socials from "./Socials";
 
 export default function Footer() {

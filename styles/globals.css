@@ -40,3 +40,29 @@ span.anchor {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
+
+.wrapperwithsidebar {
+  /* important styles */
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* important styles */
+  flex-shrink: 0;
+  width: 250px;
+  height: 100vh;
+  overflow: auto;
+  /* position: sticky; */
+
+  /* extra styles */
+  padding: 20px;
+  box-shadow: 3px;
+}
+
+.contentwithsidebar {
+  /* important styles */
+  flex-grow: 1;
+
+  /* extra styles */
+  /* padding: 16px; */
+}

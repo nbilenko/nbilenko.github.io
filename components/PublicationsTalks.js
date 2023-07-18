@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import userData from "@constants/data";
+import { userData } from "@constants/data";
 import { PUB_COLORS, TALK_COLORS } from "@constants/utils";
 
 function TabLink({ name, href, active }) {

@@ -11,11 +11,14 @@ function App({ Component, pageProps }) {
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+          var host = window.location.hostname;
+          if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'G-N67H49L9YG');
+            gtag('config', 'G-N67H49L9YG');
+          }
         `}
       </Script>
       <Component {...pageProps} />
