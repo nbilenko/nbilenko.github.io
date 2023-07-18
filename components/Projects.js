@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import userData from "@constants/data";
+import { userData } from "@constants/data";
 import { Carousel, CarouselImage } from "./Carousel";
 
 export default function Projects({ dataType = "projects" }) {
@@ -87,7 +87,13 @@ function ProjectCard({ data }) {
           ))}
         </div>
         {data.url ? (
-          <a href={data.url} target="_blank" rel="noopener noreferrer">
+          <a
+            href={data.url}
+            target={data.url.startsWith("http") ? "_blank" : undefined}
+            rel={
+              data.url.startsWith("http") ? "noopener noreferrer" : undefined
+            }
+          >
             <h2 className="inline-flex items-center text-gray-50 font-bold text-xl bg-slate-500 dark:bg-slate-600 rounded-md px-2 py-1 mx-2 hover:bg-slate-400">
               {data.name}
               <span className="mx-2">

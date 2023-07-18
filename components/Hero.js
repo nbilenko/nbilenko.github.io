@@ -1,5 +1,5 @@
-import Link from "next/link";
-import userData from "@constants/data";
+import InlineLink from "./InlineLink";
+import { userData } from "@constants/data";
 
 export default function Hero() {
   return (
@@ -27,32 +27,19 @@ export default function Hero() {
           I'm drawn to creative collaborations and learning by making things.
         </p>
         <p className="text-m my-2">
-          This site is home to some of my
-          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
-            <Link href="/pubstalks"> publications and talks</Link>
-          </span>
-          ,{" "}
-          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
-            <Link href="/projects"> technology-related projects</Link>
-          </span>
-          , and{" "}
-          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
-            <Link href="/crafts"> craft projects</Link>
-          </span>
-          .
+          This site is home to some of my{" "}
+          <InlineLink href="/pubstalks" text={"publications and talks"} />,{" "}
+          <InlineLink href="/projects" text="technology-related projects" />,
+          and <InlineLink href="/crafts" text="craft projects" />.
         </p>
         <p className="text-m my-2">
           Last year, I was profiled by USPTO in{" "}
-          <span className="rounded-sm text-sky-700 dark:text-yellow-200 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-sky-600 dark:hover:text-sky-400">
-            <Link
-              href="https://www.uspto.gov/learning-and-resources/journeys-innovation/field-stories/artificial-intelligence-all
+          <InlineLink
+            href="https://www.uspto.gov/learning-and-resources/journeys-innovation/field-stories/artificial-intelligence-all
 "
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              this article
-            </Link>
-          </span>
+            blank={true}
+            text="this article"
+          />
           .
         </p>
       </div>
