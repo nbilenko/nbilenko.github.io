@@ -5,7 +5,7 @@ export default function DearData() {
   return (
     <section className="max-w-7xl">
       <div className="md:flex min-h-100vh">
-        <aside className="sidebar top-20 hidden md:block md:sticky box-border rounded border-2">
+        <aside className="sidebar top-20 hidden md:block md:sticky box-border rounded border-2 dark:border-[#33636E]">
           <h1>
             <a href="#about">about the project</a>
           </h1>
@@ -59,37 +59,29 @@ function DearDataWeek({ data }) {
       <div className="" id={data.theme}>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 items-center p-2">
           <div className="p-3">
-            <span className="text-[#A63B1E] font-semibold">ching: </span>
+            <span className="text-[#B04528] font-semibold">ching: </span>
             <span>{data.ching.text}</span>
           </div>
-          <div className="box-border border-4">
-            <DearDataImage
-              src={data.ching.frontImage}
-              alt={`${data.theme} ching (front)`}
-            />
-          </div>
-          <div className="box-border border-4">
-            <DearDataImage
-              src={data.ching.backImage}
-              alt={`${data.theme} ching (back)`}
-            />
-          </div>
+          <DearDataImage
+            src={data.ching.frontImage}
+            alt={`${data.theme} ching (front)`}
+          />
+          <DearDataImage
+            src={data.ching.backImage}
+            alt={`${data.theme} ching (back)`}
+          />
           <div className="p-3">
-            <span className="text-[#427FA9] font-semibold">natalia: </span>
+            <span className="text-[#4C89B3] font-semibold">natalia: </span>
             <span>{data.natalia.text}</span>
           </div>
-          <div className="box-border border-4">
-            <DearDataImage
-              src={data.natalia.frontImage}
-              alt={`${data.theme} natalia (front)`}
-            />
-          </div>
-          <div className="box-border border-4">
-            <DearDataImage
-              src={data.natalia.backImage}
-              alt={`${data.theme} natalia (back)`}
-            />
-          </div>
+          <DearDataImage
+            src={data.natalia.frontImage}
+            alt={`${data.theme} natalia (front)`}
+          />
+          <DearDataImage
+            src={data.natalia.backImage}
+            alt={`${data.theme} natalia (back)`}
+          />
         </div>
         <div className="text-gray-50 font-light text-xs rounded-sm px-4 py-2">
           {data.description}
@@ -99,6 +91,10 @@ function DearDataWeek({ data }) {
   );
 }
 
-function DearDataImage({ src, alt, height }) {
-  return <img src={src} alt={alt} className="ml-auto mr-auto object-cover" />;
+function DearDataImage({ src, alt }) {
+  return (
+    <div className="box-border border-4 dark:border-[#33636E]">
+      <img src={src} alt={alt} className="ml-auto mr-auto object-cover" />
+    </div>
+  );
 }
