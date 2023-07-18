@@ -36,8 +36,8 @@ export default function DearData() {
               personal data. This project launched a movement, and many artists,
               designers, students, data people, and my friend Ching Hsieh and I
               followed in Stefanie and Giorgia's footsteps. I love how the
-              postcards we've exchanged transport me through time and space and
-              remind me to stop and take notice.
+              postcards we've exchanged serve as a portal through time and space
+              and a reminder to stop and take notice.
             </div>
           </div>
           {dearData.weeks.map((week, idx) => (
