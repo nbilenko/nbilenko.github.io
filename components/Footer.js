@@ -10,8 +10,16 @@ export default function Footer() {
             &copy; {userData.name} {userData.lastUpdated}
           </p>
           <p className="text-[10px]">
-            I made this site to learn more about next.js and tailwind. Inspired
-            by design by{" "}
+            I made{" "}
+            <a
+              href="https://github.com/nbilenko/nbilenko.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              this site
+            </a>{" "}
+            to learn more about next.js and tailwind. Inspired by design by{" "}
             <a
               href="https://manuarora.in/"
               target="_blank"
