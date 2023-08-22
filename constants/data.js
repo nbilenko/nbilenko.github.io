@@ -723,124 +723,33 @@ export const userData = {
 export const dearData = {
   weeks: [
     {
-      index: 1,
-      theme: "digital detox",
-      url: "digital_detox",
+      index: 11,
+      theme: "ideas",
+      url: "ideas",
       ching: {
-        frontImage: "/deardata/week1_ching_front.jpg",
-        backImage: "/deardata/week1_ching_back.jpg",
-        text: `A week of twinges {aka Digital Detox} to log into
-        de-activated Facebook...`,
+        frontImage: "/deardata/week11_ching_front.jpg",
+        backImage: "/deardata/week11_ching_back.jpg",
+        text: `I was interested in exploring the patterns in which ideas emerge, and what I learned was that most new ideas spark in the morning hours, usually while engaged in something else such as just waking up, driving, or taking a walk. There was an even split between "work ideas" vs personal ones, though the personal project ones felt more sparkly and energetic. I also had a lot of fun thinking of ideas for this visualization.`,
       },
       natalia: {
-        frontImage: "/deardata/week1_natalia_front.jpg",
-        backImage: "/deardata/week1_natalia_back.jpg",
-        text: `Facebook Detox (resisting pangs). This week I tracked all urges to go on facebook while on "hiatus"`,
+        frontImage: "/deardata/week11_natalia_front.jpg",
+        backImage: "/deardata/week11_natalia_back.jpg",
+        text: `This week I tracked ideas, how and in what context they occurred, and whether they led to an action. I ended up dropping time from the visualization, because I started thinking of ideas often floating outside of time, and the phrase "catching ideas" that David Lynch uses to describe his creative process (also, that part wasn't that interesting to see).`,
       },
     },
     {
-      index: 2,
-      theme: "microaggressions",
-      url: "microagg",
+      index: 10,
+      theme: "movement",
+      url: "movement",
       ching: {
-        frontImage: "/deardata/week2_ching_front.jpg",
-        backImage: "/deardata/week2_ching_back.jpg",
-        text: "A week of microaggressions",
+        frontImage: "/deardata/week10_ching_front.jpg",
+        backImage: "/deardata/week10_ching_back.jpg",
+        text: "This one was months in the making and I am RUSTY! Data recorded in June, then visualized in September... 6 months in quarantine now, and rather than introverted bliss, it's starting to feel like prison. Claustrophobic in my own skin and mind. It's what the striped border is meant to represent, but it ended up looking like a holiday card instead. Still some positivity left, I suppose.",
       },
       natalia: {
-        frontImage: "/deardata/week2_natalia_front.jpg",
-        backImage: "/deardata/week2_natalia_back.jpg",
-        text: `microaggressions =( >( =O -_-. Recorded instances of microaggressions, either involving me or for which I was present`,
-      },
-    },
-    {
-      index: 3,
-      theme: "music",
-      url: "music",
-      ching: {
-        frontImage: "/deardata/week3_ching_front.jpg",
-        backImage: "/deardata/week3_ching_back.jpg",
-        text: "A week of music! This week I tracked all the music I heard and noticed, whether intentionally from my earphones or out and about, or inside my own head. Also noted two dimensions in reaction to the music - happy or annoyed.",
-      },
-      natalia: {
-        frontImage: "/deardata/week3_natalia_front.jpg",
-        backImage: "/deardata/week3_natalia_back.jpg",
-        text: "Music (Song Exploder podcast specifically). This week I tracked music I listened to. I narrowed it down to episodes of the Song Exploder podcast.",
-      },
-    },
-    {
-      index: 4,
-      theme: "conversations / interactions",
-      url: "convos",
-      ching: {
-        frontImage: "/deardata/week4_ching_front.jpg",
-        backImage: "/deardata/week4_ching_back.jpg",
-        text: "A week of conversations. Data tracked: verbal conversations only.",
-      },
-      natalia: {
-        frontImage: "/deardata/week4_natalia_front.jpg",
-        backImage: "/deardata/week4_natalia_back.jpg",
-        text: "Interactions! This week I tracked all in-person, phone, and video interactions I had. This was a highly unusually interactive week for me. So much communication!",
-      },
-    },
-    {
-      index: 5,
-      theme: "food & drink",
-      url: "food_drink",
-      ching: {
-        frontImage: "/deardata/week5_ching_front.jpg",
-        backImage: "/deardata/week5_ching_back.jpg",
-        text: "Food & drink",
-      },
-      natalia: {
-        frontImage: "/deardata/week5_natalia_front.jpg",
-        backImage: "/deardata/week5_natalia_back.jpg",
-        text: "Food & drink! This week I tracked everything I ate and drank.",
-      },
-    },
-    {
-      index: 6,
-      theme: "reading",
-      url: "reading",
-      ching: {
-        frontImage: "/deardata/week6_ching_front.jpg",
-        backImage: "/deardata/week6_ching_back.jpg",
-        text: "What I read.",
-      },
-      natalia: {
-        frontImage: "/deardata/week6_natalia_front.jpg",
-        backImage: "/deardata/week6_natalia_back.jpg",
-        text: "This week I tracked all articles I read.",
-      },
-    },
-    {
-      index: 7,
-      theme: "doors",
-      url: "doors",
-      ching: {
-        frontImage: "/deardata/week7_ching_front.jpg",
-        backImage: "/deardata/week7_ching_back.jpg",
-        text: "A week of DOORS",
-      },
-      natalia: {
-        frontImage: "/deardata/week7_natalia_front.jpg",
-        backImage: "/deardata/week7_natalia_back.jpg",
-        text: "This week I tracked all doors and doorways that I crossed",
-      },
-    },
-    {
-      index: 8,
-      theme: "outfits",
-      url: "outfits",
-      ching: {
-        frontImage: "/deardata/week8_ching_front.jpg",
-        backImage: "/deardata/week8_ching_back.jpg",
-        text: "A week of outfits",
-      },
-      natalia: {
-        frontImage: "/deardata/week8_natalia_front.jpg",
-        backImage: "/deardata/week8_natalia_back.jpg",
-        text: "What I wore (interactive card!)",
+        frontImage: "/deardata/week10_natalia_front.jpg",
+        backImage: "/deardata/week10_natalia_back.jpg",
+        text: "This week, I recorded my movements between locations (and in one case, within a location). This was shortly before quarantine, and looking back on my life then, only a few weeks ago, is surreal. Maybe that's why I gravitated towards a fanciful kite/plant theme - I hope we grow towards better times through this untethered journey.",
       },
     },
     {
@@ -859,18 +768,124 @@ export const dearData = {
       },
     },
     {
-      index: 10,
-      theme: "movement",
-      url: "movement",
+      index: 8,
+      theme: "outfits",
+      url: "outfits",
       ching: {
-        frontImage: "/deardata/week10_ching_front.jpg",
-        backImage: "/deardata/week10_ching_back.jpg",
-        text: "This one was months in the making and I am RUSTY! Data recorded in June, then visualized in September... 6 months in quarantine now, and rather than introverted bliss, it's starting to feel like prison. Claustrophobic in my own skin and mind. It's what the striped border is meant to represent, but it ended up looking like a holiday card instead. Still some positivity left, I suppose.",
+        frontImage: "/deardata/week8_ching_front.jpg",
+        backImage: "/deardata/week8_ching_back.jpg",
+        text: "A week of outfits",
       },
       natalia: {
-        frontImage: "/deardata/week10_natalia_front.jpg",
-        backImage: "/deardata/week10_natalia_back.jpg",
-        text: "This week, I recorded my movements between locations (and in one case, within a location). This was shortly before quarantine, and looking back on my life then, only a few weeks ago, is surreal. Maybe that's why I gravitated towards a fanciful kite/plant theme - I hope we grow towards better times through this untethered journey.",
+        frontImage: "/deardata/week8_natalia_front.jpg",
+        backImage: "/deardata/week8_natalia_back.jpg",
+        text: "What I wore (interactive card!)",
+      },
+    },
+    {
+      index: 7,
+      theme: "doors",
+      url: "doors",
+      ching: {
+        frontImage: "/deardata/week7_ching_front.jpg",
+        backImage: "/deardata/week7_ching_back.jpg",
+        text: "A week of DOORS",
+      },
+      natalia: {
+        frontImage: "/deardata/week7_natalia_front.jpg",
+        backImage: "/deardata/week7_natalia_back.jpg",
+        text: "This week I tracked all doors and doorways that I crossed",
+      },
+    },
+    {
+      index: 6,
+      theme: "reading",
+      url: "reading",
+      ching: {
+        frontImage: "/deardata/week6_ching_front.jpg",
+        backImage: "/deardata/week6_ching_back.jpg",
+        text: "What I read.",
+      },
+      natalia: {
+        frontImage: "/deardata/week6_natalia_front.jpg",
+        backImage: "/deardata/week6_natalia_back.jpg",
+        text: "This week I tracked all articles I read.",
+      },
+    },
+    {
+      index: 5,
+      theme: "food & drink",
+      url: "food_drink",
+      ching: {
+        frontImage: "/deardata/week5_ching_front.jpg",
+        backImage: "/deardata/week5_ching_back.jpg",
+        text: "Food & drink",
+      },
+      natalia: {
+        frontImage: "/deardata/week5_natalia_front.jpg",
+        backImage: "/deardata/week5_natalia_back.jpg",
+        text: "Food & drink! This week I tracked everything I ate and drank.",
+      },
+    },
+    {
+      index: 4,
+      theme: "conversations / interactions",
+      url: "convos",
+      ching: {
+        frontImage: "/deardata/week4_ching_front.jpg",
+        backImage: "/deardata/week4_ching_back.jpg",
+        text: "A week of conversations. Data tracked: verbal conversations only.",
+      },
+      natalia: {
+        frontImage: "/deardata/week4_natalia_front.jpg",
+        backImage: "/deardata/week4_natalia_back.jpg",
+        text: "Interactions! This week I tracked all in-person, phone, and video interactions I had. This was a highly unusually interactive week for me. So much communication!",
+      },
+    },
+    {
+      index: 3,
+      theme: "music",
+      url: "music",
+      ching: {
+        frontImage: "/deardata/week3_ching_front.jpg",
+        backImage: "/deardata/week3_ching_back.jpg",
+        text: "A week of music! This week I tracked all the music I heard and noticed, whether intentionally from my earphones or out and about, or inside my own head. Also noted two dimensions in reaction to the music - happy or annoyed.",
+      },
+      natalia: {
+        frontImage: "/deardata/week3_natalia_front.jpg",
+        backImage: "/deardata/week3_natalia_back.jpg",
+        text: "Music (Song Exploder podcast specifically). This week I tracked music I listened to. I narrowed it down to episodes of the Song Exploder podcast.",
+      },
+    },
+    {
+      index: 2,
+      theme: "microaggressions",
+      url: "microagg",
+      ching: {
+        frontImage: "/deardata/week2_ching_front.jpg",
+        backImage: "/deardata/week2_ching_back.jpg",
+        text: "A week of microaggressions",
+      },
+      natalia: {
+        frontImage: "/deardata/week2_natalia_front.jpg",
+        backImage: "/deardata/week2_natalia_back.jpg",
+        text: `microaggressions =( >( =O -_-. Recorded instances of microaggressions, either involving me or for which I was present`,
+      },
+    },
+    {
+      index: 1,
+      theme: "digital detox",
+      url: "digital_detox",
+      ching: {
+        frontImage: "/deardata/week1_ching_front.jpg",
+        backImage: "/deardata/week1_ching_back.jpg",
+        text: `A week of twinges {aka Digital Detox} to log into
+        de-activated Facebook...`,
+      },
+      natalia: {
+        frontImage: "/deardata/week1_natalia_front.jpg",
+        backImage: "/deardata/week1_natalia_back.jpg",
+        text: `Facebook Detox (resisting pangs). This week I tracked all urges to go on facebook while on "hiatus"`,
       },
     },
   ],
