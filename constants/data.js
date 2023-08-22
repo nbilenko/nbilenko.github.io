@@ -420,6 +420,29 @@ export const userData = {
   ],
   crafts: [
     {
+      name: "Granny square cardigan",
+      pattern:
+        "Construction self-drafted, square design sourced from Yarnutopia, back panel: hindsight by Polly Plum",
+      patternUrl: "",
+      tiles: [
+        {
+          name: "Granny square cardigan",
+          url: "/crafts/granny_cardigan.jpg",
+        },
+        {
+          name: "Granny square cardigan (back)",
+          url: "/crafts/granny_cardigan_back.jpg",
+        },
+        {
+          name: "Granny square cardigan (hood)",
+          url: "/crafts/granny_cardigan_hood.jpg",
+        },
+      ],
+      description:
+        "Granny square cardigan. Yarn: Malabrigo Rios Whales Road, Malabrigo Rios Winter Lake, Universal Phantom Heather.",
+      tags: ["crochet"],
+    },
+    {
       name: "Hindsight Afghan block",
       pattern: "Hindsight by Polly Plum",
       patternUrl: "https://everytrickonthehook.com/patterns-2/hindsight/",
@@ -430,7 +453,7 @@ export const userData = {
         },
       ],
       description:
-        "Hindsight panel, Malabrigo Rios Whales Road yarn, to be part of another project.",
+        "Hindsight, Malabrigo Rios Whales Road yarn, for a cardigan back panel.",
       tags: ["crochet"],
     },
     {
