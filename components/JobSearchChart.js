@@ -16,12 +16,11 @@ export function JobSearchChart() {
       const marginBottom = 20;
       const marginLeft = 50;
 
-      // Create an horizontal (*x*) scale for each key.
       const x = new Map(
         Array.from(keys, (key) => [
           key,
           d3.scalePoint(
-            ...[new Set(data.map((d) => d[key]).filter((d) => !!d || d === 0))],
+            data.map((d) => d[keyz]),
             [marginLeft, width - marginRight]
           ),
         ])
@@ -32,27 +31,35 @@ export function JobSearchChart() {
 
       // Create the color scale.
       const color = d3.scaleSequential(x.get(keyz).domain(), (t) =>
-        d3.interpolateGreens(t)
+        d3.interpolateCool(t)
       );
+      // const color = d3
+      //   .scaleOrdinal(d3.schemeGnBu)
+      //   .domain(x.get(keyz).domain());
 
       // Append the lines.
       const line = d3
         .line()
-        .defined(([, value]) => value != null)
-        .x(([key, value]) => x.get(key)(value))
+        .defined(([, , value]) => !!value || value === 0)
+        .x(
+          ([key, value]) =>
+            x.get(keyz)(value) + (key !== keyz ? d3.randomNormal()() * 15 : 0)
+        )
         .y(([key]) => y(key))
         .curve(d3.curveCatmullRom.alpha(0.5));
 
       svg
         .append("g")
         .attr("fill", "none")
-        .attr("stroke-width", 4)
-        .attr("stroke-opacity", 0.5)
+        .attr("stroke-width", 5)
+        .attr("stroke-opacity", 0.75)
         .selectAll("path")
         .data(data.slice().sort((a, b) => d3.ascending(a[keyz], b[keyz])))
         .join("path")
         .attr("stroke", (d) => color(d[keyz]))
-        .attr("d", (d) => line(d3.cross(keys, [d], (key, d) => [key, d[key]])))
+        .attr("d", (d) =>
+          line(d3.cross(keys, [d], (key, d) => [key, d[keyz], d[key]]))
+        )
         .append("title")
         .text((d) => d.name);
 
@@ -60,10 +67,10 @@ export function JobSearchChart() {
       imgs
         .enter()
         .append("svg:image")
-        .attr("y", y(keyz) + 10)
-        .attr("width", 40)
-        .attr("height", 40)
-        .attr("x", (d) => x.get(keyz)(d[keyz]))
+        .attr("y", y(keyz))
+        .attr("width", 44)
+        .attr("height", 44)
+        .attr("x", (d) => x.get(keyz)(d[keyz]) - 22)
         .attr("xlink:href", (d) => `jobsearch/${d.image}`);
 
       // Append the axis for each key.

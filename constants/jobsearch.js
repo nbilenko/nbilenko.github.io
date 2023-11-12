@@ -1,5 +1,5 @@
 export const keys = [
-  "result",
+  //   "result",
   "phase9",
   "phase8",
   "phase7",
@@ -15,7 +15,6 @@ export const keys = [
 export const data = [
   {
     index: 0,
-    name: "0",
     image: "0.png",
     phase1: "hiring manager",
     phase2: "hiring manager",
