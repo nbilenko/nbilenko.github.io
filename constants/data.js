@@ -6,6 +6,16 @@ export const userData = {
   email: "nbilenko+website@gmail.com",
   publications: [
     {
+      title:
+        "Ariadne: building a custom observability UI for personalized search",
+      authors: "Natalia Bilenko and Javad Hashemi",
+      year: 2023,
+      where: "Stitch Fix Algorithms Blog",
+      url: "https://multithreaded.stitchfix.com/blog/2023/06/13/ariadne-observability-ui-for-search/",
+      topics: ["data visualization", "observability"],
+      type: "article",
+    },
+    {
       title: "Queer in AI: a case study in community-led participatory AI",
       authors: "Organizers Of Queer in AI et al.",
       year: 2023,
@@ -13,6 +23,16 @@ export const userData = {
       url: "https://dl.acm.org/doi/10.1145/3593013.3594134",
       topics: ["machine learning", "community organizing"],
       type: "article",
+    },
+    {
+      title:
+        "Artificial intelligence for all <this one is about me, not by me>",
+      authors: "Laura Larrimore",
+      year: 2022,
+      where: "USPTO Journeys of Innovation",
+      url: "https://www.uspto.gov/learning-and-resources/journeys-innovation/field-stories/artificial-intelligence-all",
+      topics: ["art", "community organizing", "neuroscience"],
+      type: "profile",
     },
     {
       title:
@@ -420,6 +440,19 @@ export const userData = {
   ],
   crafts: [
     {
+      name: "Winslow culottes",
+      pattern: "Kalle shirt by Helen's Closet patterns",
+      patternUrl: "https://helensclosetpatterns.com/product/winslow-culottes/",
+      fabric: ["Handwoven cotton ikat"],
+      tiles: [
+        {
+          name: "Winslow culottes",
+          url: "/crafts/winslow.jpg",
+        },
+      ],
+      tags: ["sewing"],
+    },
+    {
       name: "Granny square cardigan",
       pattern:
         "Construction self-drafted, square design sourced from Yarnutopia, back panel: hindsight by Polly Plum",
@@ -530,16 +563,20 @@ export const userData = {
       ],
       tags: ["sewing", "recycling"],
     },
-    // {
-    //   name: "Charlie caftan",
-    //   pattern: "Charlie caftan by Closet Core patterns",
-    //   patternUrl:
-    //     "https://closetcorepatterns.com/products/charlie-caftan-pattern",
-    //   fabric: [
-    //     "Cat faces Ecovero Challis in black/white and wisteria/merlot (discontinued)",
-    //   ],
-    //   tags: ["sewing"],
-    // },
+    {
+      name: "Charlie caftan",
+      pattern: "Charlie caftan by Closet Core patterns",
+      patternUrl:
+        "https://closetcorepatterns.com/products/charlie-caftan-pattern",
+      fabric: ["Cat faces Ecovero Challis in black/white and wisteria/merlot"],
+      tiles: [
+        {
+          name: "Charlie caftan",
+          url: "/crafts/charlie.jpg",
+        },
+      ],
+      tags: ["sewing"],
+    },
     {
       name: "Kalle shirt (stand collar)",
       pattern: "Kalle shirt by Closet core patterns",

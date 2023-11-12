@@ -2,6 +2,7 @@ export const PUB_COLORS = {
   article: "blue",
   thesis: "red",
   proceedings: "cyan",
+  profile: "pink",
   patent: "green",
   report: "yellow",
 };
